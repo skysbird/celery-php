@@ -175,6 +175,7 @@ class AsyncResult
 		}
 		catch(AMQPQueueException $e)
 		{
+
    			$q->delete();
     		$this->connection->disconnect();
 			return false;
